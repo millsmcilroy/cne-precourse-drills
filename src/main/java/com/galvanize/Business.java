@@ -7,11 +7,12 @@ import java.util.List;
  * Created by mills on 3/9/17.
  */
 public class Business implements Addressable {
-    String name;
-    ArrayList<Address> addresses;
+    private String name;
+    private List<Address> addresses;
 
     public Business(String name) {
         this.name = name;
+        addresses = new ArrayList<>();
     }
 
     public String getName() {
