@@ -12,7 +12,7 @@ public class Business implements Addressable {
 
     public Business(String name) {
         this.name = name;
-        addresses = new ArrayList<>();
+        this.addresses = new ArrayList<>();
     }
 
     public String getName() {
