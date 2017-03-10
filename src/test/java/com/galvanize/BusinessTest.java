@@ -98,6 +98,9 @@ public class BusinessTest {
             fail("You haven't implemented the addAddress / getAddresses methods on Business correctly");
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
+            if(e.getCause().getClass().getName().equals("java.lang.NullPointerException")) {
+              fail("You failed to initialize the addresses list");
+            }
         }
     }
 
